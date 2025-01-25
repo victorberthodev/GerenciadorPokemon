@@ -1,0 +1,78 @@
+{
+"select p.pokemon_id,\r\n       p.pokemon_name,\r\n       h.habitat_name \r\nfrom pokemons p \r\njoin habitats h on p.habitat_id = h.habitat_id \r\nwhere h.habitat_name = 'sea'": [
+	{
+		"pokemon_id" : 72,
+		"pokemon_name" : "tentacool",
+		"habitat_name" : "sea"
+	},
+	{
+		"pokemon_id" : 73,
+		"pokemon_name" : "tentacruel",
+		"habitat_name" : "sea"
+	},
+	{
+		"pokemon_id" : 86,
+		"pokemon_name" : "seel",
+		"habitat_name" : "sea"
+	},
+	{
+		"pokemon_id" : 87,
+		"pokemon_name" : "dewgong",
+		"habitat_name" : "sea"
+	},
+	{
+		"pokemon_id" : 90,
+		"pokemon_name" : "shellder",
+		"habitat_name" : "sea"
+	},
+	{
+		"pokemon_id" : 91,
+		"pokemon_name" : "cloyster",
+		"habitat_name" : "sea"
+	},
+	{
+		"pokemon_id" : 116,
+		"pokemon_name" : "horsea",
+		"habitat_name" : "sea"
+	},
+	{
+		"pokemon_id" : 117,
+		"pokemon_name" : "seadra",
+		"habitat_name" : "sea"
+	},
+	{
+		"pokemon_id" : 120,
+		"pokemon_name" : "staryu",
+		"habitat_name" : "sea"
+	},
+	{
+		"pokemon_id" : 121,
+		"pokemon_name" : "starmie",
+		"habitat_name" : "sea"
+	},
+	{
+		"pokemon_id" : 131,
+		"pokemon_name" : "lapras",
+		"habitat_name" : "sea"
+	},
+	{
+		"pokemon_id" : 138,
+		"pokemon_name" : "omanyte",
+		"habitat_name" : "sea"
+	},
+	{
+		"pokemon_id" : 139,
+		"pokemon_name" : "omastar",
+		"habitat_name" : "sea"
+	},
+	{
+		"pokemon_id" : 140,
+		"pokemon_name" : "kabuto",
+		"habitat_name" : "sea"
+	},
+	{
+		"pokemon_id" : 141,
+		"pokemon_name" : "kabutops",
+		"habitat_name" : "sea"
+	}
+]}

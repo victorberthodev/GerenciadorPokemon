@@ -1,0 +1,6 @@
+{
+"SELECT COUNT(*)\r\nFROM pokemons p\r\nWHERE EXISTS (\r\n    SELECT *\r\n    FROM pokemon_types pt\r\n    JOIN types_ t ON pt.type_id = t.type_id\r\n    WHERE t.type_name = 'water' AND p.pokemon_id = pt.pokemon_id\r\n) AND NOT EXISTS (\r\n    SELECT *\r\n    FROM pokemon_types pt\r\n    JOIN types_ t ON pt.type_id = t.type_id\r\n    WHERE t.type_name != 'water' AND p.pokemon_id = pt.pokemon_id\r\n)\r\n": [
+	{
+		"count" : 18
+	}
+]}

@@ -1,0 +1,13 @@
+UPDATE pokemons p
+SET evolution_level = 
+    CASE
+        WHEN p.pokemon_id NOT IN (SELECT evolved_to_id FROM evolutions) THEN 1
+        
+        WHEN p.pokemon_id IN (SELECT evolved_to_id 
+                              FROM evolutions 
+                              WHERE pokemon_id IN (SELECT pokemon_id 
+                                                   FROM pokemons 
+                                                   WHERE pokemon_id NOT IN (SELECT evolved_to_id 
+                                                                            FROM evolutions))) THEN 2
+        ELSE 3
+    END;

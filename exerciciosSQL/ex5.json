@@ -1,0 +1,67 @@
+{
+"SELECT \r\n    p.pokemon_name, \r\n    p.pokemon_id\r\nFROM \r\n    pokemons p\r\nJOIN \r\n    evolutions e1 ON p.pokemon_id = e1.pokemon_id\r\nJOIN \r\n    evolutions e2 ON e1.evolved_to_id = e2.pokemon_id\r\nWHERE \r\n    e2.evolved_to_id IS NOT null\r\norder by pokemon_id ": [
+	{
+		"pokemon_name" : "bulbasaur",
+		"pokemon_id" : 1
+	},
+	{
+		"pokemon_name" : "charmander",
+		"pokemon_id" : 4
+	},
+	{
+		"pokemon_name" : "squirtle",
+		"pokemon_id" : 7
+	},
+	{
+		"pokemon_name" : "caterpie",
+		"pokemon_id" : 10
+	},
+	{
+		"pokemon_name" : "weedle",
+		"pokemon_id" : 13
+	},
+	{
+		"pokemon_name" : "pidgey",
+		"pokemon_id" : 16
+	},
+	{
+		"pokemon_name" : "nidoran-f",
+		"pokemon_id" : 29
+	},
+	{
+		"pokemon_name" : "nidoran-m",
+		"pokemon_id" : 32
+	},
+	{
+		"pokemon_name" : "oddish",
+		"pokemon_id" : 43
+	},
+	{
+		"pokemon_name" : "poliwag",
+		"pokemon_id" : 60
+	},
+	{
+		"pokemon_name" : "abra",
+		"pokemon_id" : 63
+	},
+	{
+		"pokemon_name" : "machop",
+		"pokemon_id" : 66
+	},
+	{
+		"pokemon_name" : "bellsprout",
+		"pokemon_id" : 69
+	},
+	{
+		"pokemon_name" : "geodude",
+		"pokemon_id" : 74
+	},
+	{
+		"pokemon_name" : "gastly",
+		"pokemon_id" : 92
+	},
+	{
+		"pokemon_name" : "dratini",
+		"pokemon_id" : 147
+	}
+]}

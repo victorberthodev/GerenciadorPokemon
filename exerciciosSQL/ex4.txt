@@ -1,0 +1,1 @@
+update pokemons set weight = weight / 10, height = height / 10

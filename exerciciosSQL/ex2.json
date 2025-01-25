@@ -1,0 +1,7 @@
+{
+"--2. Trazer a quantidade de pokemon que tem tipo \"fire\" como um de seus tipos, para o postgress e para o mongoDB\r\nselect t.type_name, \r\n       count(p.pokemon_id)\r\nfrom pokemons p \r\nleft join pokemon_types pt on p.pokemon_id = pt.pokemon_id\r\nleft join types_ t on pt.type_id = t.type_id\r\nwhere t.type_name = 'fire'\r\ngroup by t.type_name ": [
+	{
+		"type_name" : "fire",
+		"count" : 12
+	}
+]}
